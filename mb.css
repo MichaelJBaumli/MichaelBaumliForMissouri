@@ -1,0 +1,159 @@
+.bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+}
+
+@media (min-width: 768px) {
+		.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+		}
+}
+
+.container {
+		max-width: 960px;
+}
+
+ /*
+ * Custom translucent site header
+ */
+
+.site-header {
+		/*background-color: rgba(0, 0, 0, .85);*/
+		background-color: #FFFFFF;
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+		color: #727272;
+}
+
+
+.product-device {
+		position: absolute;
+		right: 6%;
+		bottom: -30%;
+		width: 300px;
+		height: 540px;
+		background-color: #333;
+		border-radius: 21px;
+		/*transform: rotate(30deg);*/
+}
+
+.product-device::before {
+		position: absolute;
+		height: 540px;
+		top: 10%;
+		right: 10px;
+		bottom: 10%;
+		left: 10px;
+		content: "";
+		background-color: rgba(255, 255, 255, .1);
+		border-radius: 5px;
+}
+
+.product-device-2 {
+		/*top: -25%;*/
+		position: absolute;
+		right: auto;
+		bottom: 0;
+		/*left: 5%;*/
+		left: 0;
+		width: auto;
+		/*background-color: #e5e5e5;*/
+		background: none;
+		border-radius: 0;
+}
+
+
+.picturesTop {
+	background-position-y: inherit;
+	background-size: 100%;
+}
+
+
+#social_list {
+	color: white;
+	list-style-type: none;
+	margin-top: 3.5em;
+}
+
+#twitter_icon {
+	width: 50%;
+	height: auto;
+}
+
+#banner {
+	z-index: 1030;
+	background-position-y: bottom;
+}
+
+#logo {
+	width: 10%;                                    
+	height: auto;
+}
+
+#logoImage {
+	width: 150%;                                    
+	height: auto;
+}
+
+.round {
+	border-radius: 21px 21px 21px 21px;
+}
+
+
+/*
+* Extra utilities
+*/
+
+.flex-equal>* {
+		flex: 1;
+}
+
+@media (min-width: 768px) {
+		.flex-md-equal>* {
+				flex: 1;
+		}
+		.footer {
+			position: absolute;
+			bottom: 0;
+			left: 50em;
+			right: 50em;
+		}
+}
+
+@media only screen and (max-width: 600px) {
+	.images {
+	  max-width: 100%;
+	  height: auto;
+	}
+	#logo {
+		width: 100%;
+		height: auto;
+		margin-top: -5em; 
+		margin-bottom: -5em;
+	}
+	#logoImage {
+		width: 100%;                                    
+		height: auto;
+	}
+	#donate {
+		width: 50%;
+		margin-bottom: 1em!important;
+	}
+	.spacing {
+		margin: 1em;
+	}
+	#aboutPrompt {
+		padding-left: 1rem!important;
+		padding-right: 1rem!important;
+		padding-bottom: 1rem!important;
+		padding-top: 0rem!important;
+		margin-top: 0rem!important;
+	}
+  }
